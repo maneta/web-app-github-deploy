@@ -7,6 +7,19 @@
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
-For information about using this template, see [Deploy a web app linked to a GitHub repository](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-arm-from-github-provision/).
+Commands to deploy:
 
+```
+azure login
+
+azure account list
+
+azure account set <YourSubscriptionNameOrId>
+
+azure config mode arm
+
+azure group create -n WebAppTestCapside -l "West Europe"
+
+azure group deployment create -f azuredeploy.json -g  WebAppTestCapside 
+```
 
